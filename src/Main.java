@@ -4,10 +4,10 @@ public class Main {
         task2();
         task3();
         task4();
-        //task5();
-        //task6();
-        //task7();
-        //task8();
+        task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1 () {   //just make diff var
@@ -24,6 +24,7 @@ public class Main {
         System.out.println("Значение переменной flowers с типом long равно " + flowers);
         System.out.println("Значение переменной g с типом float равно " + g);
         System.out.println("Значение переменной pi с типом double равно " + pi);
+        System.out.println();
 
     }
     public static void task2 () {   //choose var
@@ -36,6 +37,7 @@ public class Main {
         short sixth = 27897;
         byte seventh = 67;
         System.out.println("Good choose!");
+        System.out.println();
 
     }
     public static void task3 () { //task about teachers and papers
@@ -47,6 +49,7 @@ public class Main {
         var students = ludmila+kate+anna;
         var paperPerstudent = papers/students;
         System.out.println("На каждого ученика рассчитано " + paperPerstudent + " листов бумаги.");
+        System.out.println();
     }
     public static void task4 () {
         System.out.println("Задача 4");
@@ -57,44 +60,78 @@ public class Main {
         int botlePerDay = ((24*3) * botlePerTwentyMin);
         int botlePerTreeDay = 3 * botlePerDay;
         int botlePerMonth = 10 * botlePerTreeDay;
-        System.out.println("За машина произвела … штук бутылок");
+        System.out.println("За 20 минут машина произвела " + botlePerTwentyMin + " штук бутылок");
+        System.out.println("За день машина произвела " + botlePerDay + " штук бутылок");
+        System.out.println("За 3 дня машина произвела " + botlePerTreeDay + " штук бутылок");
+        System.out.println("За месяц машина произвела " + botlePerMonth + " штук бутылок");
+        System.out.println();
     }
     public static void task5 () {
         System.out.println("Задача 5");
-        var frog = 3.5;
-        System.out.println("frog =" + frog);
-        frog = frog * 10;
-        System.out.println("frog * 10 =" + frog);
-        frog = frog / 3.5;
-        System.out.println("frog / 3.5 =" + frog);
+        byte canOfPaint = 120;
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+        int paintPerClass = whitePaintPerClass + brownPaintPerClass;
+        int classes = canOfPaint / paintPerClass;
+        int whitePaint = classes * whitePaintPerClass;
+        int brownPaint = classes * brownPaintPerClass;
+        System.out.println( "В школе, где " + classes + " классов, нужно " + whitePaint + " банок белой краски и " + brownPaint + " банок коричневой краски.");
+        System.out.println();
     }
     public static void task6 () {
         System.out.println("Задача 6");
-        var boxer1 = 78.2;
-        var boxer2 = 82.7;
-        var boxers = boxer1 + boxer2;
-        System.out.println("Boxers =" + boxers);
-        var differense = boxer1 - boxer2;
-        System.out.println("Differense = " + differense);
+        byte banana = 5;
+        byte bananaWeight = 80;
+        int bananasWeight = banana * bananaWeight;
+        int milkMillilitres = 200;
+        int milkWeightPerHundreMillilitres = 105;
+        int milkMass = milkMillilitres / 100 * milkWeightPerHundreMillilitres;
+        int iceCream = 2;
+        int iceCreamWeight = iceCream * 100;
+        byte eggs = 4;
+        byte eggWeight = 80;
+        int eggsWeight = eggs * eggWeight;
+        double cocktailWeight = bananasWeight + milkMass + iceCreamWeight +eggsWeight;
+        double coctailWeightKilo = cocktailWeight / 1000;
+        System.out.println("Завтрак весит " + cocktailWeight + " грамм или " + coctailWeightKilo + " килограмм.");
+        System.out.println();
+
     }
     public static void task7 () {
         System.out.println("Задача 7");
-        var boxer1 = 78.2;
-        var boxer2 = 82.7;
-        var differense = boxer2 % boxer1;
-        System.out.println("Differense = " + differense);
-        differense = boxer2 - boxer1;
-        System.out.println("Differense = " + differense);
+        float needLoseKg = 7;
+        float minG = 250;
+        float minKg = minG / 1000;
+        float maxG = 500;
+        float maxKg = maxG / 1000;
+        float dayIfMinLose = needLoseKg / minKg;
+        float dayIfMaxLose = needLoseKg / maxKg;
+        float dayMidle = (dayIfMinLose + dayIfMaxLose) / 2;
+        System.out.println(" Чтобы сбросить 7 килограмм, спортсмену надо " + dayIfMinLose + " дней, если минимально сбрасывать вес, " + dayIfMaxLose + " дней, если максимально сбрасывать вес. В среднем необходимо " + dayMidle + " дней.");
+        System.out.println();
     }
     public static void task8 () {
         System.out.println("Задача 8");
-        var hours = 680;
-        var hoursPerWorker = 8;
-        var workers = hours/hoursPerWorker ;
-        System.out.println("Всего работников в компании — " + workers + " человек");
-        workers = workers + 94;
-        hours = hoursPerWorker * workers;
-        System.out.println("Если в компании работает " + workers + " человек, то всего " + hours + " часов работы может быть поделено между сотрудниками");
+        double salaryMary = 67760;
+        double salaryDen = 83690;
+        double salaryKris = 76230;
+        double upSalaryK = 1.1;
+        double salaryMaryUp = salaryMary * upSalaryK;
+        double salaryDenUp = salaryDen * upSalaryK;
+        double salaryKrisUp = salaryKris * upSalaryK;
+        double yearInMonth = 12;
+        double salaryMaryYear = salaryMary * yearInMonth;
+        double salaryDenYear = salaryDen * yearInMonth;
+        double salaryKrisYear = salaryKris * yearInMonth;
+        double salaryYearMaryUp = salaryMaryYear * upSalaryK;
+        double salaryYearDenUp = salaryDenYear * upSalaryK;
+        double salaryYearKrisUp = salaryKrisYear * upSalaryK;
+        double diffBtvMarySalary = salaryYearMaryUp - salaryMaryYear;
+        double diffBtvDenSalary = salaryYearDenUp - salaryDenYear;
+        double diffBtvKrisSalary = salaryYearKrisUp - salaryKrisYear;
+        System.out.println("Маша теперь получает " +  salaryMaryUp + " рублей. Годовой доход вырос на " + diffBtvMarySalary + " рублей");
+        System.out.println("Денис теперь получает " +  salaryDenUp + " рублей. Годовой доход вырос на " + diffBtvDenSalary + " рублей");
+        System.out.println("Кристина теперь получает " +  salaryKrisUp + " рублей. Годовой доход вырос на " + diffBtvKrisSalary + " рублей");
 
     }
 
